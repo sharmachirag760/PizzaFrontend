@@ -1,5 +1,6 @@
-import './App.css'
-import IconArrowRight from './Components/Icons/ArrowRight'
+import './App.css';
+import PizzaImage from './assets/Images/pizza2.png';
+import IconArrowRight from './Components/Icons/ArrowRight';
 function App() {
   return (
     <div>
@@ -25,6 +26,14 @@ function App() {
                  <IconArrowRight/>
               </span>
              </button>
+          </div>
+          <div>
+             <img 
+             src={PizzaImage} 
+             alt="pizza" 
+             width={550}
+             height={550}
+             />
           </div>
         </section>
     </div>
