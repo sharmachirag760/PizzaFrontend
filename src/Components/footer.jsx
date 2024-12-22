@@ -6,7 +6,7 @@ function Footer() {
                 <p className="text-sm text-center text-gray-500 sm:text-left">
                     &copy; 2024 Pizza App                    
                   <a
-                    href="https://twitter.com/knyttneve"
+                    href= "#"
                     rel="noopener noreferrer"
                     className="ml-1 text-gray-600"
                     target="_blank"
