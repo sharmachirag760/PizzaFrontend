@@ -7,7 +7,6 @@ import { useEffect } from 'react';
 import { getCartDetails } from '../Redux/Slices/CartSlice';
 import CartIcon from '../assets/Images/cart.svg';
 
-// eslint-disable-next-line react/prop-types
 function Layout({ children }) {
     const isLoggedIn = useSelector((state) => state.auth.isLoggedIn);
     const { cartsData } = useSelector((state) => state.cart);
