@@ -18,7 +18,7 @@ function Login() {
          [name]: value
         })
      }
-      async function handleFormSubmit(e) {
+     async function handleFormSubmit(e) {
         e.preventDefault(); // prevent the form from reloading the page
         console.log(loginData);
         if(!loginData.email || !loginData.password ) {

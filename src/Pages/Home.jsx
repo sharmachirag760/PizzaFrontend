@@ -156,7 +156,7 @@ function Home() {
         </section>
         <div className="mx-auto">
                 <div className="flex flex-wrap justify-center">
-                    {productsData.map((item) => {
+                    { productsData?.map((item) => {
                         return (
                             item.inStock && (
                                 <div className="p-4 md:w-1/3" key={item._id}>

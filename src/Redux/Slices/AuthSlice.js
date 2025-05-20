@@ -2,9 +2,9 @@ import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axiosInstance from "../../Helpers/axiosInstance";
 import toast from "react-hot-toast";
 const initialState = {
-    isLoggedIn: localStorage.getItem('isLoggedIn') === 'true' || false,
+    isLoggedIn: localStorage.getItem('isLoggedIn') === 'true' || 'false',
     role: localStorage.getItem('role') || '',
-    data: JSON.parse(localStorage.getItem('data')) || {},
+    data: localStorage.getItem('data') || {},
 };
 
 export const createAccount = createAsyncThunk('/auth/createAccount', async (data) => {
@@ -85,5 +85,4 @@ const AuthSlice = createSlice({
         })
     }
 });
-
 export default AuthSlice.reducer;
